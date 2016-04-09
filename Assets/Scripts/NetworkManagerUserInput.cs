@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class NetworkManagerUserInput : MonoBehaviour {
+
+public class NetworkManagerUserInput :  MonoBehaviour {
 
 	public Button StartHostBtn;
 	public Button JoinGameBtn;
@@ -28,8 +29,14 @@ public class NetworkManagerUserInput : MonoBehaviour {
 
 	public void Disconnect()
 	{
-		NetMgr.client.Disconnect ();
+		NetMgr.LocalPlayer.Disconnect ();
 	}
+
+	public void LoadScene2()
+	{
+		NetMgr.LoadScene ("Main2");
+	}
+
 
 
 }

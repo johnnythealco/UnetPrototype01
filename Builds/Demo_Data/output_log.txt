@@ -14,34 +14,42 @@ Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\Un
 Loading C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.039 seconds
+Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\LitJson.dll (this message is harmless)
+Loading C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\LitJson.dll into Unity Child Domain
+- Completed reload, in  0.106 seconds
 Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Unity\Projects\UnetPrototype01\Builds\Demo_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 0.626408 ms
+UnloadTime: 0.531816 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.336515 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 178.
-Total: 0.196691 ms (FindLiveObjects: 0.008107 ms CreateObjectMapping: 0.007507 ms MarkObjects: 0.174469 ms  DeleteObjects: 0.006005 ms)
-
- Server Command Test
+UnloadTime: 4.264445 ms
+OnClientConnect Called : Conection hostId: -1 connectionId: 0 isReady: False channel count: 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.736616 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
-Total: 0.396085 ms (FindLiveObjects: 0.010510 ms CreateObjectMapping: 0.013212 ms MarkObjects: 0.366956 ms  DeleteObjects: 0.004804 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 192.
+Total: 0.230924 ms (FindLiveObjects: 0.012912 ms CreateObjectMapping: 0.008107 ms MarkObjects: 0.202396 ms  DeleteObjects: 0.007207 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.339930 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 212.
+Total: 0.225218 ms (FindLiveObjects: 0.006306 ms CreateObjectMapping: 0.007207 ms MarkObjects: 0.209303 ms  DeleteObjects: 0.002402 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.348939 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 188.
+Total: 0.220113 ms (FindLiveObjects: 0.006606 ms CreateObjectMapping: 0.007207 ms MarkObjects: 0.199694 ms  DeleteObjects: 0.006306 ms)
+
+OnClientConnect Called : Conection hostId: -1 connectionId: 0 isReady: False channel count: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3fd0 -> priority: 1 
-  Thread -> id: 3fd4 -> priority: 1 
+  Thread -> id: 2d68 -> priority: 1 
+  Thread -> id: 2d6c -> priority: 1 
