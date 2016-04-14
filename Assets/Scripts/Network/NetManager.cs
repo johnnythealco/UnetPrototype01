@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class NetManager : NetworkManager 
 {
 
-	public NetPlayer LocalPlayer;
+	public ClientInputController LocalPlayer;
 
 	public void StartupHost()
 	{
