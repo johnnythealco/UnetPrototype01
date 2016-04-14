@@ -3,36 +3,33 @@ using System.Collections;
 using UnityEngine.UI;
 
 
-public class NetworkManagerUserInput :  MonoBehaviour {
+public class NetworkManagerUI :  MonoBehaviour
+{
 
-	public Button StartHostBtn;
-	public Button JoinGameBtn;
-	public Button DisconnectBtn;
+	NetManager NetMgr;
 
-	public NetManager NetMgr;
-
-	void Awake()
+	void Awake ()
 	{
 		NetMgr = GameObject.Find ("! NetworkManager !").GetComponent<NetManager> ();
 	}
 
 
-	public void StartHost()
+	public void StartHost ()
 	{
 		NetMgr.StartupHost ();
 	}
 
-	public void JoinGame()
+	public void JoinGame ()
 	{
 		NetMgr.JoinGame ();
 	}
 
-	public void Disconnect()
+	public void Disconnect ()
 	{
 		NetMgr.LocalPlayer.Disconnect ();
 	}
 
-	public void LoadScene2()
+	public void LoadScene2 ()
 	{
 		NetMgr.LoadScene ("Main2");
 	}
