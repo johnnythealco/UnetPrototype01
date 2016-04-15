@@ -54,3 +54,18 @@ public class Unit
 	}
 		
 }
+
+[System.Serializable]
+public class Faction : System.Object
+{
+	[SerializeField]
+	string factionName;
+
+	string FactionName{ get { return factionName; } }
+
+	public Faction (string name)
+	{
+		this.factionName = name;
+	}
+
+}
