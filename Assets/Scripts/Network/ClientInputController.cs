@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ClientInputController :  NetworkBehaviour
 {
 	[SyncVar]
 	public short PlayerID;
 
+	[SyncVar]
+	public string PlayerName;
+
 	public bool isPlayer;
 
 
 	NetManager NetMgr;
+	PlayerListDisplay PlayerList;
 
 	#region Setup and Network Management
 
@@ -18,6 +24,8 @@ public class ClientInputController :  NetworkBehaviour
 	{
 		DontDestroyOnLoad (this.gameObject);
 		NetMgr = GameObject.Find ("! NetworkManager !").GetComponent<NetManager> ();
+
+
 	}
 
 	void Start ()
@@ -29,10 +37,15 @@ public class ClientInputController :  NetworkBehaviour
 	{
 		if (hasAuthority)
 		{
+			PlayerName = Game.Manager.localPlayerName;
+			PlayerList = GameObject.Find ("Player List").GetComponent<PlayerListDisplay> ();
+
 			NetMgr.LocalPlayer = this;
 			this.gameObject.name = "Local Player";
 			this.PlayerID = (short)this.netId.Value;
 			this.isPlayer = this.isLocalPlayer;
+
+
 		}
 
 		if (!hasAuthority)
@@ -75,6 +88,7 @@ public class ClientInputController :  NetworkBehaviour
 	{
 		var player = JsonUtility.FromJson<Player> (JSON_Player);
 		Game.Manager.state.Players.Add (player);
+		PlayerList.Prime (Game.Manager.state.Players);
 		RpcAddPlayer (JSON_Player);
 	}
 
@@ -93,6 +107,7 @@ public class ClientInputController :  NetworkBehaviour
 	{
 		var PlayerID = (short)this.netId.Value;
 		var PlayerName = "Player " + PlayerID.ToString ();
+
 		var newPlayerObject = new Player (PlayerName, PlayerID);
 		var JSON_Player = JsonUtility.ToJson (newPlayerObject);
 

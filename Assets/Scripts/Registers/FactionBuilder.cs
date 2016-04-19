@@ -13,7 +13,7 @@ public class FactionBuilder : MonoBehaviour
 		if (FactionNameInput.text != null)
 		{
 			var faction = new Faction (FactionNameInput.text);
-			factionRegister.Factions.Add (faction);
+			factionRegister.factionList.Add (faction);
 		}
 	}
 

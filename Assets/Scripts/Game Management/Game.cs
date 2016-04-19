@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//using LitJson;
+
 
 public class Game : MonoBehaviour
 {
 	public static Game Manager;
-	NetManager NetMgr;
+	public FactionRegister FactionRegister;
+	public string localPlayerName;
 
 	public GameState state = new GameState ();
 
@@ -21,7 +22,9 @@ public class Game : MonoBehaviour
 		}
 		DontDestroyOnLoad (this.gameObject);
 
-		NetMgr = GameObject.Find ("! NetworkManager !").GetComponent<NetManager> ();
+		FactionRegister.UdateLookup ();
+
+
 
 
 	}
